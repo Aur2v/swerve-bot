@@ -13,8 +13,8 @@ client.on('ready', () => {
 });
 
 client.on("messageCreate", (message) => {
-    if (message.content == "ping"){
-        message.reply("hey lol, hru?")
+    if (message.content == "hi"){
+        message.reply("Hello World!")
     }
 })
 
