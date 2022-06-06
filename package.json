@@ -6,10 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aur2v/swerve-bot.git"
+  },
   "author": "Auryn",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aur2v/swerve-bot/issues"
+  },
+  "homepage": "https://github.com/Aur2v/swerve-bot#readme",
   "dependencies": {
-    "discord.js": "^12.5.3",
+    "discord.js": "^13.8.0",
     "dotenv": "^16.0.1"
   }
 }
