@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Aur2v/swerve-bot#readme",
   "dependencies": {
+    "canvas": "^2.9.1",
     "discord.js": "^13.8.0",
     "dotenv": "^16.0.1"
   }

@@ -1,21 +1,30 @@
 const Discord = require("discord.js")
+
 require("dotenv").config()
 
 const client = new Discord.Client({
     intents: [
         "GUILDS",
-        "GUILD_MESSAGES"
+        "GUILD_MESSAGES",
+        "GUILD_MEMBERS"
     ]
 })
 
-client.on("ready", () => {
-    console.log(`Logged in as ${client.user.tag}`)
-})
+let bot = {
+    client,
+    prefix: ";",
+    owners: ["510767386106920960"]
+}
 
-client.on("messageCreate", (message) => {
-    if (message.content == "hi"){
-        message.reply("hey mamas")
-    }
-})
+client.commands = new Discord.Collection()
+client.events = new Discord.Collection()
+
+client.loadEvents = (bot, reload) => require("./handlers/events")(bot, reload)
+client.loadCommands = (bot,reload) => require("./handlers/commands")(bot, reload)
+
+client.loadEvents(bot, false)
+client.loadCommands(bot, false)
+
+module.exports = bot
 
 client.login(process.env.TOKEN)
