@@ -1,3 +1,8 @@
+.gitignore
 .env
 package-lock.json
 node_modules/
+commands/
+events/
+handlers/
+util/
