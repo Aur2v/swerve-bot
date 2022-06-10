@@ -1,5 +1,4 @@
 const Discord = require("discord.js")
-
 require("dotenv").config()
 
 const client = new Discord.Client({
@@ -11,7 +10,7 @@ const client = new Discord.Client({
 })
 
 let bot = {
-    client,
+    client, 
     prefix: ";",
     owners: ["510767386106920960"]
 }
@@ -20,7 +19,7 @@ client.commands = new Discord.Collection()
 client.events = new Discord.Collection()
 
 client.loadEvents = (bot, reload) => require("./handlers/events")(bot, reload)
-client.loadCommands = (bot,reload) => require("./handlers/commands")(bot, reload)
+client.loadCommands = (bot, reload) => require("./handlers/commands")(bot, reload)
 
 client.loadEvents(bot, false)
 client.loadCommands(bot, false)
