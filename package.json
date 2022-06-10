@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/Aur2v/swerve-bot.git"
   },
-  "author": "Auryn",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Aur2v/swerve-bot/issues"
   },
-  "homepage": "https://github.com/Aur2v/swerve-bot#readme",
+  "homepage": "https://github.com/Aur2v/swerve-bot",
   "dependencies": {
     "canvas": "^2.9.1",
     "discord.js": "^13.8.0",
